@@ -19,8 +19,9 @@ span {
   color: red;
 }
 
-#rectangle-width-validate,
-#rectangle-height-validate {
+#width-validation-message,
+#height-validation-message {
   color: red;
   margin-left: 50px;
+  font-size:0.8em;
 }

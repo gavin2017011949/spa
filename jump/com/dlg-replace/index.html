@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查找替换对话框</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/dlg-common.css">
+    <link rel="stylesheet" href="dlg-replace.css">
+</head>
+<body>
+    <input type="button" value="点击">
+    <!-- <div class="notepad-dlg-replace">
+        <div class="dialogbox notepad-dlgbox">
+            <div class="notepad-dlg-titlebar">
+                <p class="title">替换</p>
+                <span class="close-btn">✖</span>
+            </div>
+            <div class="main notepad-dlg-main">
+                <label>查找内容(N):<input type="text" class="txt-search" autofocus><br></label>
+                <label>替换为(P):<input type="text" class="txt-replace"><br></label>
+                <input type="checkbox" value="capital-sense">区分大小写(C)
+                <input type="button" class="btn-search btn" value="查找下一个(F)">
+                <input type="button" class="btn-replace btn" value="替换(R)">
+                <input type="button" class="btn-replace-all btn" value="全部替换(A)">
+                <input type="button" class="btn-cancel btn" value="取消">
+            </div>
+        </div>
+    </div> -->
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="dlg-replace.js"></script>
+    <script>
+        $(function() {
+          var $btnTest = $('input');
+        
+          $btnTest.click(function() {
+            $dlgReplace.show({
+              searchHandler: function(e) { console.log('search btn click.'); console.log(e); },
+              replaceHandler: function(e) { console.log('replace btn click.'); console.log(e); },
+              replaceAllHandler: function(e) { console.log('replace all btn click.'); console.log(e); }
+            });
+          });
+        });
+        </script>
+</body>
+</html>

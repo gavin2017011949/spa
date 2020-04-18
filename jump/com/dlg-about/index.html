@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹出对话框</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/dlg-common.css">
+    <link rel="stylesheet" href="./dlg-about.css">
+    
+</head>
+<body>
+    <div class="test">
+        <input type="button" value="弹出"/>
+    </div>
+    <!-- <div class="notepad-dlg-mask notepad-dlg-about">
+        <div class="dialogbox notepad-dlgbox">
+            <div class="notepad-dlg-titlebar">
+                <p class="title">关于"记事本"</p>
+                <span class="close-btn">✖</span>
+            </div>
+            <div class="main notepad-dlg-main">
+                <h1 class="slogan">JSNotepad</h1>
+                <hr>
+                <img src="../../images/notepad-icon-32.png" alt="JSNotepad" class="app-logo">
+                <div class="info">
+                    <p>作者：皇甫玉茹</p>
+                    <p>QQ：864134710</p>
+                    <p>仓库地址</p>
+                </div>
+                <input type="button" class="btn-ok btn" value="确定">
+            </div>
+        </div>
+    </div> -->
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- 使用jquery开发的一些ui组件,我们用到了remove draggable -->
+    <script src="//cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="dlg-about.js"></script>
+    <script>
+        $(function(){
+            var $btnTest = $('div.test>input[type="button"]');
+            $btnTest.click(function(){
+                $dlgAbout.show()
+            })
+        })
+    </script>
+</body>
+</html>

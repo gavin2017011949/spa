@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>timer button的测试页面</title>
+</head>
+<body>
+  <input id="add" type="button" value="添加定时器按钮"/>  
+  <br>
+  <div id="main">
+  
+  </div>  
+  <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="./timer-button.js"></script>
+  <script>
+    /*
+    $(function(){
+        $timerBtn.show({
+          container:'#main',
+          time:5,
+          title:'ok',
+          onClick:function(){
+            console.log('同意了哦')
+          }
+          })
+      var $btnAdd = $('#add');
+      $btnAdd.click(function(){
+        $timerBtn.show({
+            container:'#main',
+            time:10,
+            title:'同意了',
+            onClick:function(){
+              console.log('点击了')
+            }
+          });
+      })
+    })
+    */
+  $(function(){
+    var $btnAdd = $('#add');
+    $btnAdd.click(function(){
+      var tb = new TimerButton();
+      tb.show({
+        container:'#main',
+        time:10,
+        title:'同意了',
+        onClick:function(){
+          console.log('同意了')
+        }
+      })
+      })
+  })
+  </script>
+</body>
+</html>

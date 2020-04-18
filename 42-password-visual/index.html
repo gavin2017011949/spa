@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>timer button</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <input id="add" type="button" value="添加密码框"/>
+  <input id="show" type="button" value="显示密码"/>
+  <div id="main">
+  </div>
+  <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="./main.js"></script>
+  <script>
+    $(function(){
+        $('#add').click(function(){
+          $a.showDiv('#main')
+        })
+        $('#show').click(function(){
+          $a.getPwd()
+          })
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+*{
+  padding:0;
+  margin:0;
+}
+#main{
+  width:232px;
+  height:30px;
+}
+.eye{
+  float:right;
+  background:url('./img/eye.png');
+  background-size:auto 30px;
+  background-position:center center;
+  background-repeat:no-repeat;
+  height:30px;
+  width:30px;
+}
+.eye2{
+  float:right;
+  background:url('./img/eye2.png');
+  background-size:auto 30px;
+  background-position:center center;
+  background-repeat:no-repeat;
+  height:30px;
+  width:30px;
+}
+#box{
+  float:left;
+}
